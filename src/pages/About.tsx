@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   Scale, 
   Users, 
@@ -16,7 +15,6 @@ import {
 } from 'lucide-react';
 
 const About = () => {
-
   const team = [
     {
       name: {

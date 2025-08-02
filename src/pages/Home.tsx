@@ -63,8 +63,8 @@ const Home = () => {
   ];
 
   const stats = [
-    { label: 'Документов проанализировано', value: '10,000+', icon: FileText },
-    { label: 'Довольных клиентов', value: '2,500+', icon: Users },
+    { label: 'Документов проанализировано', value: '1,500+', icon: FileText },
+    { label: 'Довольных клиентов', value: '200+', icon: Users },
     { label: 'Точность анализа', value: '98%', icon: TrendingUp },
     { label: 'Средняя оценка', value: '4.9/5', icon: Star }
   ];

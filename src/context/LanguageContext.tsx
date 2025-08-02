@@ -83,9 +83,9 @@ const translations = {
     en: 'AI Assistant for Legal Tasks'
   },
   'home.hero.subtitle': {
-    uz: 'Shartnomalarni tahlil qiling, yuridik maslahatlar oling va sun\'iy intellekt yordamida qonunlarni o\'rganing. O\'zbekiston va Markaziy Osiyo biznesiga maxsus yaratilgan.',
-    ru: 'Анализируйте договоры, получайте юридические консультации и изучайте законы с помощью искусственного интеллекта. Создано специально для бизнеса в Узбекистане и Центральной Азии.',
-    en: 'Analyze contracts, get legal advice, and study laws with artificial intelligence. Created specifically for business in Uzbekistan and Central Asia.'
+    uz: 'Shartnomalarni tahlil qiling, yuridik maslahatlar oling va sun\'iy intellekt yordamida qonunlarni o\'rganing.',
+    ru: 'Анализируйте договоры, получайте юридические консультации и изучайте законы с помощью искусственного интеллекта.',
+    en: 'Analyze contracts, get legal advice, and study laws with artificial intelligence.'
   },
   'home.hero.cta_start': {
     uz: 'Bepul boshlash',
