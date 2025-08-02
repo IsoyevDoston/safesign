@@ -37,20 +37,23 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate checking for existing auth token
-    const token = localStorage.getItem('token');
-    if (token) {
-      // In a real app, you'd validate the token with your backend
-      const mockUser: User = {
-        id: '1',
-        name: 'John Doe',
-        email: 'john@example.com',
-        role: 'user',
-        subscriptionPlan: 'free',
-        documentsAnalyzed: 1,
-        monthlyLimit: 3
-      };
-      setUser(mockUser);
+    // Only run in browser environment
+    if (typeof window !== 'undefined') {
+      // Simulate checking for existing auth token
+      const token = localStorage.getItem('token');
+      if (token) {
+        // In a real app, you'd validate the token with your backend
+        const mockUser: User = {
+          id: '1',
+          name: 'John Doe',
+          email: 'john@example.com',
+          role: 'user',
+          subscriptionPlan: 'free',
+          documentsAnalyzed: 1,
+          monthlyLimit: 3
+        };
+        setUser(mockUser);
+      }
     }
     setLoading(false);
   }, []);
@@ -67,7 +70,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       monthlyLimit: 3
     };
     setUser(mockUser);
-    localStorage.setItem('token', 'mock-token');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('token', 'mock-token');
+    }
   };
 
   const register = async (name: string, email: string, password: string) => {
@@ -82,11 +87,15 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       monthlyLimit: 3
     };
     setUser(mockUser);
-    localStorage.setItem('token', 'mock-token');
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('token', 'mock-token');
+    }
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('token');
+    }
     setUser(null);
   };
 
