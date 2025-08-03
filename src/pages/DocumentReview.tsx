@@ -191,7 +191,7 @@ const DocumentReview = () => {
                         className="flex items-center px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-700 cursor-pointer transition-colors"
                       >
                         <Upload className="h-4 w-4 mr-2" />
-                        Заменить
+                        {t('document.replace') || 'Replace'}
                       </label>
                     </div>
                   </div>
@@ -249,7 +249,7 @@ const DocumentReview = () => {
                   
                   <div className="mb-6">
                     <div className="flex justify-between text-sm text-gray-600 mb-2">
-                      <span>Уровень риска</span>
+                      <span>{t('document.risk_level')}</span>
                       <span>{getRiskText(analysis.riskScore)}</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-3">
@@ -268,7 +268,7 @@ const DocumentReview = () => {
 
                 {/* Identified Risks */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Выявленные риски</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('document.identified_risks')}</h3>
                   <div className="space-y-4">
                     {analysis.risks.map((risk: any, index: number) => (
                       <div key={index} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
@@ -287,7 +287,7 @@ const DocumentReview = () => {
 
                 {/* Recommendations */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Рекомендации</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('document.recommendations')}</h3>
                   <div className="space-y-3">
                     {analysis.recommendations.map((recommendation: string, index: number) => (
                       <div key={index} className="flex items-start space-x-3">
@@ -300,15 +300,15 @@ const DocumentReview = () => {
 
                 {/* Actions */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Действия</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">{t('common.actions') || 'Actions'}</h3>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <button className="flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                       <Download className="h-5 w-5 mr-2" />
-                      Скачать отчет
+                      {t('document.download_report')}
                     </button>
                     <button className="flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
                       <Eye className="h-5 w-5 mr-2" />
-                      Просмотреть детали
+                      {t('common.view') || 'View details'}
                     </button>
                   </div>
                 </div>
@@ -322,20 +322,20 @@ const DocumentReview = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
               <div className="flex items-center mb-4">
                 <Shield className="h-6 w-6 text-green-600 mr-2" />
-                <h3 className="text-lg font-semibold text-gray-900">Безопасность</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('document.security') || 'Security'}</h3>
               </div>
               <div className="space-y-3 text-sm text-gray-600">
                 <div className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  <span>Шифрование данных</span>
+                  <span>{t('document.encryption') || 'Data encryption'}</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  <span>Автоудаление файлов</span>
+                  <span>{t('document.auto_delete') || 'Auto-delete files'}</span>
                 </div>
                 <div className="flex items-center">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
-                  <span>Соответствие GDPR</span>
+                  <span>{t('document.gdpr_compliance') || 'GDPR compliance'}</span>
                 </div>
               </div>
             </div>
@@ -344,20 +344,20 @@ const DocumentReview = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
               <div className="flex items-center mb-4">
                 <Clock className="h-6 w-6 text-blue-600 mr-2" />
-                <h3 className="text-lg font-semibold text-gray-900">Процесс анализа</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('document.process_title') || 'Analysis process'}</h3>
               </div>
               <div className="space-y-3 text-sm text-gray-600">
                 <div>
-                  <span className="font-medium">1. Извлечение текста</span>
-                  <p>Распознавание и обработка содержимого документа</p>
+                  <span className="font-medium">1. {t('document.step_extract') || 'Text extraction'}</span>
+                  <p>{t('document.step_extract_desc') || 'Recognition and processing of document content'}</p>
                 </div>
                 <div>
-                  <span className="font-medium">2. ИИ-анализ</span>
-                  <p>Выявление рисков и проблемных областей</p>
+                  <span className="font-medium">2. {t('document.step_ai_analysis') || 'AI analysis'}</span>
+                  <p>{t('document.step_ai_analysis_desc') || 'Identifying risks and problem areas'}</p>
                 </div>
                 <div>
-                  <span className="font-medium">3. Рекомендации</span>
-                  <p>Формирование предложений по улучшению</p>
+                  <span className="font-medium">3. {t('document.step_recommendations') || 'Recommendations'}</span>
+                  <p>{t('document.step_recommendations_desc') || 'Forming suggestions for improvement'}</p>
                 </div>
               </div>
             </div>
@@ -366,13 +366,13 @@ const DocumentReview = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
               <div className="flex items-center mb-4">
                 <AlertTriangle className="h-6 w-6 text-yellow-600 mr-2" />
-                <h3 className="text-lg font-semibold text-gray-900">Советы</h3>
+                <h3 className="text-lg font-semibold text-gray-900">{t('document.tips') || 'Tips'}</h3>
               </div>
               <div className="space-y-3 text-sm text-gray-600">
-                <p>• Загружайте четкие сканы документов</p>
-                <p>• Убедитесь, что текст читаем</p>
-                <p>• Проверьте размер файла (до 10MB)</p>
-                <p>• Используйте поддерживаемые форматы</p>
+                <p>{t('document.tip_clear_scans') || '• Upload clear document scans'}</p>
+                <p>{t('document.tip_readable_text') || '• Make sure the text is readable'}</p>
+                <p>{t('document.tip_file_size') || '• Check file size (up to 10MB)'}</p>
+                <p>{t('document.tip_supported_formats') || '• Use supported formats'}</p>
               </div>
             </div>
           </div>

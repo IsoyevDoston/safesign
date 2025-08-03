@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { 
   Calendar, 
   User, 
@@ -27,17 +28,18 @@ interface BlogPost {
 }
 
 const Blog = () => {
+  const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = [
-    { value: 'all', label: 'Все категории' },
-    { value: 'contract-law', label: 'Договорное право' },
-    { value: 'business-law', label: 'Бизнес-право' },
-    { value: 'tax-law', label: 'Налоговое право' },
-    { value: 'labor-law', label: 'Трудовое право' },
-    { value: 'technology', label: 'Правовые технологии' },
-    { value: 'updates', label: 'Обновления законов' }
+    { value: 'all', label: t('law_search.categories.all') },
+    { value: 'contract-law', label: t('blog.category.contract_law') },
+    { value: 'business-law', label: t('blog.category.business_law') },
+    { value: 'tax-law', label: t('blog.category.tax_law') },
+    { value: 'labor-law', label: t('blog.category.labor_law') },
+    { value: 'technology', label: t('blog.category.technology') },
+    { value: 'updates', label: t('blog.category.updates') }
   ];
 
   const mockPosts: BlogPost[] = [

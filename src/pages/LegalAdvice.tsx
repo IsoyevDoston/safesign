@@ -25,7 +25,7 @@ const LegalAdvice = () => {
     {
       id: 1,
       type: 'ai',
-      content: 'Здравствуйте! Я ваш ИИ-юрист, специализирующийся на законодательстве Узбекистана и Центральной Азии. Задайте мне любой правовой вопрос, и я постараюсь помочь вам.',
+      content: t('legal_advice.initial_message'),
       timestamp: new Date()
     }
   ]);
@@ -159,11 +159,10 @@ const LegalAdvice = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            ИИ Юридическая консультация
+            {t('legal_advice.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Получите персональные рекомендации от ИИ-юриста, специализирующегося 
-            на законодательстве Узбекистана и Центральной Азии
+            {t('legal_advice.subtitle')}
           </p>
         </div>
 
@@ -178,15 +177,15 @@ const LegalAdvice = () => {
                     <Scale className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">ИИ-Юрист</h3>
+                    <h3 className="font-semibold text-gray-900">{t('legal_advice.ai_lawyer')}</h3>
                     <p className="text-sm text-green-600 flex items-center">
                       <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                      Онлайн
+                      {t('legal_advice.online')}
                     </p>
                   </div>
                 </div>
                 <div className="text-sm text-gray-500">
-                  Специализация: Право Узбекистана
+                  {t('legal_advice.specialization')}
                 </div>
               </div>
 
@@ -258,7 +257,7 @@ const LegalAdvice = () => {
                           handleSendMessage();
                         }
                       }}
-                      placeholder="Задайте ваш правовой вопрос..."
+                      placeholder={t('legal_advice.placeholder')}
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                       rows={2}
                     />
@@ -276,7 +275,7 @@ const LegalAdvice = () => {
 
             {/* Quick Questions */}
             <div className="mt-6 bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Популярные вопросы</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('legal_advice.popular_questions')}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {quickQuestions.map((question, index) => (
                   <button
@@ -297,38 +296,36 @@ const LegalAdvice = () => {
             <div className="bg-yellow-50 border border-yellow-200 rounded-2xl p-6">
               <div className="flex items-center mb-3">
                 <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
-                <h3 className="font-semibold text-yellow-800">Важное уведомление</h3>
+                <h3 className="font-semibold text-yellow-800">{t('legal_advice.important_notice')}</h3>
               </div>
               <p className="text-sm text-yellow-700 leading-relaxed">
-                Данная консультация носит информационный характер и не заменяет 
-                профессиональную юридическую помощь. Для решения конкретных правовых 
-                вопросов обратитесь к квалифицированному юристу.
+                {t('legal_advice.disclaimer_text')}
               </p>
             </div>
 
             {/* Features */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
-              <h3 className="font-semibold text-gray-900 mb-4">Возможности ИИ-юриста</h3>
+              <h3 className="font-semibold text-gray-900 mb-4">{t('legal_advice.ai_capabilities')}</h3>
               <div className="space-y-3">
                 <div className="flex items-center text-sm">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Знание законов Узбекистана</span>
+                  <span className="text-gray-700">{t('legal_advice.uzbek_law')}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Корпоративное право</span>
+                  <span className="text-gray-700">{t('legal_advice.corporate_law')}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Налоговое консультирование</span>
+                  <span className="text-gray-700">{t('legal_advice.tax_consulting')}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Трудовое право</span>
+                  <span className="text-gray-700">{t('legal_advice.labor_law')}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <CheckCircle className="h-4 w-4 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Договорное право</span>
+                  <span className="text-gray-700">{t('legal_advice.contract_law')}</span>
                 </div>
               </div>
             </div>
@@ -337,13 +334,13 @@ const LegalAdvice = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
               <div className="flex items-center mb-3">
                 <Clock className="h-5 w-5 text-blue-600 mr-2" />
-                <h3 className="font-semibold text-gray-900">Время ответа</h3>
+                <h3 className="font-semibold text-gray-900">{t('legal_advice.response_time')}</h3>
               </div>
               <p className="text-sm text-gray-600 mb-3">
-                Обычно отвечаю в течение нескольких секунд
+                {t('legal_advice.response_description')}
               </p>
               <div className="text-xs text-gray-500">
-                Доступен 24/7 для ваших вопросов
+                {t('legal_advice.available_24_7')}
               </div>
             </div>
 
@@ -351,20 +348,20 @@ const LegalAdvice = () => {
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6">
               <div className="flex items-center mb-4">
                 <BookOpen className="h-5 w-5 text-purple-600 mr-2" />
-                <h3 className="font-semibold text-gray-900">Дополнительные ресурсы</h3>
+                <h3 className="font-semibold text-gray-900">{t('legal_advice.additional_resources')}</h3>
               </div>
               <div className="space-y-2">
                 <a href="#" className="block text-sm text-blue-600 hover:text-blue-700 transition-colors">
-                  База законов Узбекистана
+                  {t('legal_advice.law_database')}
                 </a>
                 <a href="#" className="block text-sm text-blue-600 hover:text-blue-700 transition-colors">
-                  Образцы документов
+                  {t('legal_advice.document_templates')}
                 </a>
                 <a href="#" className="block text-sm text-blue-600 hover:text-blue-700 transition-colors">
-                  Правовые статьи
+                  {t('legal_advice.legal_articles')}
                 </a>
                 <a href="#" className="block text-sm text-blue-600 hover:text-blue-700 transition-colors">
-                  Контакты юристов
+                  {t('legal_advice.lawyer_contacts')}
                 </a>
               </div>
             </div>
