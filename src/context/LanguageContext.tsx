@@ -744,6 +744,204 @@ const translations = {
     en: 'Contact Support'
   },
 
+  // About page specific
+  'about.hero.title': {
+    uz: 'SafeSign platformasi haqida',
+    ru: 'О платформе SafeSign',
+    en: 'About SafeSign Platform'
+  },
+  'about.hero.subtitle': {
+    uz: 'Biz ilgʼor sunʼiy intellekt texnologiyalari va Oʻzbekiston huquqi boʻyicha chuqur tajribani birlashtirib, yuridik xizmatlarning kelajagini yaratmoqdamiz',
+    ru: 'Мы создаем будущее юридических услуг, объединяя передовые технологии искусственного интеллекта с глубокой экспертизой в области права Узбекистана',
+    en: 'We are creating the future of legal services by combining advanced artificial intelligence technologies with deep expertise in Uzbekistan law'
+  },
+  'about.mission.title': {
+    uz: 'Missiya',
+    ru: 'Миссия',
+    en: 'Mission'
+  },
+  'about.mission.description': {
+    uz: 'Yuridik xizmatlarni Oʻzbekiston va Markaziy Osiyodagi har bir biznes uchun ochiq va tushunarli qilish',
+    ru: 'Сделать юридические услуги доступными и понятными для каждого бизнеса в Узбекистане и Центральной Азии',
+    en: 'Make legal services accessible and understandable for every business in Uzbekistan and Central Asia'
+  },
+  'about.vision.title': {
+    uz: 'Kelajakni koʻrish',
+    ru: 'Видение',
+    en: 'Vision'
+  },
+  'about.vision.description': {
+    uz: 'Mintaqadagi yetakchi yuridik texnologiyalar platformasiga aylanish, AI va yuristlar tajribasini birlashtirish',
+    ru: 'Стать ведущей платформой правовых технологий в регионе, объединяющей ИИ и экспертизу юристов',
+    en: 'Become the leading legal tech platform in the region, combining AI and legal expertise'
+  },
+  'about.values.title': {
+    uz: 'Qadriyatlar',
+    ru: 'Ценности',
+    en: 'Values'
+  },
+  'about.values.description': {
+    uz: 'Shaffoflik, innovatsiya, sifat va mijozlarga gʻamxoʻrlik – ishimizning asosi',
+    ru: 'Прозрачность, инновации, качество и забота о клиентах - основа нашей работы',
+    en: 'Transparency, innovation, quality, and client care are the foundation of our work'
+  },
+  'about.stats.title': {
+    uz: 'Bizning yutuqlarimiz',
+    ru: 'Наши достижения',
+    en: 'Our Achievements'
+  },
+  'about.stats.subtitle': {
+    uz: 'Bizning muvaffaqiyatimizni koʻrsatadigan raqamlar',
+    ru: 'Цифры, которые говорят о нашем успехе',
+    en: 'Numbers that speak for our success'
+  },
+  'about.features.title': {
+    uz: 'Nega SafeSign?',
+    ru: 'Почему выбирают SafeSign',
+    en: 'Why Choose SafeSign'
+  },
+  'about.features.subtitle': {
+    uz: 'Biz ilgʼor texnologiyalar va mahalliy qonunchilikni chuqur tushunishni birlashtiramiz',
+    ru: 'Мы сочетаем передовые технологии с глубоким пониманием местного права',
+    en: 'We combine advanced technology with deep local law expertise'
+  },
+  'about.team.title': {
+    uz: 'Bizning jamoamiz',
+    ru: 'Наша команда',
+    en: 'Our Team'
+  },
+  'about.team.subtitle': {
+    uz: 'Huquq va texnologiyalar sohasidagi eng yaxshi yechimlarni yaratadigan mutaxassislar',
+    ru: 'Эксперты в области права и технологий, работающие над созданием лучших решений',
+    en: 'Experts in law and technology, creating the best solutions'
+  },
+  'about.contact.title': {
+    uz: 'Biz bilan bogʻlaning',
+    ru: 'Свяжитесь с нами',
+    en: 'Contact Us'
+  },
+  'about.contact.subtitle': {
+    uz: 'Savollaringizga javob beramiz va joriy etishda yordam beramiz',
+    ru: 'Готовы ответить на ваши вопросы и помочь с внедрением',
+    en: 'Ready to answer your questions and help with implementation'
+  },
+  'about.feature.instant.title': {
+    uz: 'Zudlik bilan tahlil',
+    ru: 'Мгновенный анализ',
+    en: 'Instant Analysis'
+  },
+  'about.feature.instant.description': {
+    uz: 'Hujjatlarni soatlab kutish oʻrniga soniyalarda tahlil qiling',
+    ru: 'Анализ документов за секунды вместо часов ожидания',
+    en: 'Analyze documents in seconds instead of hours of waiting'
+  },
+  'about.feature.security.title': {
+    uz: 'Maʼlumotlar xavfsizligi',
+    ru: 'Безопасность данных',
+    en: 'Data Security'
+  },
+  'about.feature.security.description': {
+    uz: 'Hujjatlaringiz toʻliq maxfiyligi va himoyasi',
+    ru: 'Полная конфиденциальность и защита ваших документов',
+    en: 'Full confidentiality and protection of your documents'
+  },
+  'about.feature.local.title': {
+    uz: 'Mahalliy ekspertiza',
+    ru: 'Местная экспертиза',
+    en: 'Local Expertise'
+  },
+  'about.feature.local.description': {
+    uz: 'Oʻzbekiston qonunchiligi boʻyicha ixtisoslashgan',
+    ru: 'Специализация на законодательстве Узбекистана',
+    en: 'Specialized in Uzbekistan legislation'
+  },
+  'about.feature.ease.title': {
+    uz: 'Foydalanish qulayligi',
+    ru: 'Простота использования',
+    en: 'Ease of Use'
+  },
+  'about.feature.ease.description': {
+    uz: 'Har kim tushunadigan intuitiv interfeys',
+    ru: 'Интуитивный интерфейс, понятный каждому',
+    en: 'Intuitive interface, understandable for everyone'
+  },
+
+  // Document Review page
+  'document.upload.drag_text': {
+    uz: 'Fayl tanlash uchun bosing yoki bu yerga sudrab olib keling',
+    ru: 'Нажмите для выбора файла или перетащите сюда',
+    en: 'Click to select file or drag and drop here'
+  },
+  'document.upload.select_file': {
+    uz: 'Fayl tanlash',
+    ru: 'Выбрать файл',
+    en: 'Select File'
+  },
+  'document.analysis.completed': {
+    uz: 'Tahlil tugallandi',
+    ru: 'Анализ завершен',
+    en: 'Analysis completed'
+  },
+  'document.analysis.processing': {
+    uz: 'Qayta ishlanmoqda...',
+    ru: 'Обработка...',
+    en: 'Processing...'
+  },
+  'document.analysis.failed': {
+    uz: 'Tahlil muvaffaqiyatsiz tugadi',
+    ru: 'Анализ не удался',
+    en: 'Analysis failed'
+  },
+  'document.analysis.try_again': {
+    uz: 'Qayta urinish',
+    ru: 'Попробовать снова',
+    en: 'Try Again'
+  },
+  'document.analysis.new_document': {
+    uz: 'Yangi hujjat',
+    ru: 'Новый документ',
+    en: 'New Document'
+  },
+
+  // Legal Advice page
+  'legal_advice.ask_question': {
+    uz: 'Savolingizni bering',
+    ru: 'Задайте вопрос',
+    en: 'Ask your question'
+  },
+  'legal_advice.send': {
+    uz: 'Yuborish',
+    ru: 'Отправить',
+    en: 'Send'
+  },
+  'legal_advice.thinking': {
+    uz: 'AI oʼylaydi...',
+    ru: 'ИИ думает...',
+    en: 'AI is thinking...'
+  },
+
+  // Blog page
+  'blog.featured': {
+    uz: 'Asosiy maqolalar',
+    ru: 'Рекомендуемые статьи',
+    en: 'Featured Articles'
+  },
+  'blog.author': {
+    uz: 'Muallif',
+    ru: 'Автор',
+    en: 'Author'
+  },
+  'blog.views': {
+    uz: 'Koʻrish',
+    ru: 'Просмотры',
+    en: 'Views'
+  },
+  'blog.min_read': {
+    uz: 'daqiqa oʼqish',
+    ru: 'мин чтения',
+    en: 'min read'
+  },
+
   // Auth specific
   'auth.password_min': {
     uz: 'Kamida 8 ta belgi',

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { 
   MessageSquare, 
   Send, 
@@ -19,6 +20,7 @@ interface Message {
 }
 
 const LegalAdvice = () => {
+  const { t } = useLanguage();
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,

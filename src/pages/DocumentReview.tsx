@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 import { 
   Upload, 
   FileText, 
@@ -12,6 +13,7 @@ import {
 } from 'lucide-react';
 
 const DocumentReview = () => {
+  const { t } = useLanguage();
   const [file, setFile] = useState<File | null>(null);
   const [analysis, setAnalysis] = useState<any>(null);
   const [loading, setLoading] = useState(false);
@@ -131,11 +133,10 @@ const DocumentReview = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Анализ документов с ИИ
+            {t('document.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Загрузите договор или юридический документ для мгновенного анализа рисков 
-            и получения рекомендаций от нашего ИИ-юриста
+            {t('document.subtitle')}
           </p>
         </div>
 
@@ -143,7 +144,7 @@ const DocumentReview = () => {
           {/* Upload Section */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Загрузить документ</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">{t('document.upload_title')}</h2>
               
               <div
                 className={`border-2 border-dashed rounded-xl p-8 text-center transition-all duration-200 ${
@@ -183,7 +184,7 @@ const DocumentReview = () => {
                         className="flex items-center px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-800 transition-colors"
                       >
                         <X className="h-4 w-4 mr-2" />
-                        Удалить
+                        {t('common.delete')}
                       </button>
                       <label
                         htmlFor="file-upload"
@@ -204,10 +205,10 @@ const DocumentReview = () => {
                         htmlFor="file-upload"
                         className="cursor-pointer text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
                       >
-                        Нажмите для выбора файла или перетащите сюда
+                        {t('document.upload.drag_text')}
                       </label>
                       <p className="text-sm text-gray-500 mt-2">
-                        Поддерживаются форматы: PDF, DOC, DOCX, TXT (до 10MB)
+                        {t('document.supported_formats')}
                       </p>
                     </div>
                   </div>
@@ -224,10 +225,10 @@ const DocumentReview = () => {
                     {loading ? (
                       <div className="flex items-center justify-center">
                         <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-3"></div>
-                        Анализируем документ...
+                        {t('document.analyzing')}
                       </div>
                     ) : (
-                      'Анализировать документ'
+                      t('document.analyze_button')
                     )}
                   </button>
                 </div>
@@ -240,7 +241,7 @@ const DocumentReview = () => {
                 {/* Risk Score */}
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
                   <div className="flex items-center justify-between mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900">Оценка рисков</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">{t('document.risk_assessment')}</h3>
                     <div className={`px-4 py-2 rounded-full border ${getRiskColor(analysis.riskScore)}`}>
                       <span className="font-semibold">{analysis.riskScore}/100</span>
                     </div>
