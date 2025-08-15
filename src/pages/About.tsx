@@ -215,8 +215,8 @@ const About = () => {
   };
 
   const stats = [
-    { number: "10,000+", label: { ru: "Документов проанализировано", en: "Documents analyzed", uz: "Tahlil qilingan hujjatlar" } },
-    { number: "2,500+", label: { ru: "Довольных клиентов", en: "Happy clients", uz: "Mamnun mijozlar" } },
+    { number: "1,500+", label: { ru: "Документов проанализировано", en: "Documents analyzed", uz: "Tahlil qilingan hujjatlar" } },
+    { number: "100+", label: { ru: "Довольных клиентов", en: "Happy clients", uz: "Mamnun mijozlar" } },
     { number: "98%", label: { ru: "Точность анализа", en: "Analysis accuracy", uz: "Tahlil aniqligi" } },
     { number: "24/7", label: { ru: "Доступность сервиса", en: "Service availability", uz: "Xizmat doimiyligi" } }
   ];
@@ -446,43 +446,69 @@ const About = () => {
       <div className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                {sectionTitles.tech[lang]}
-              </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Мы используем самые современные технологии машинного обучения и 
-                обработки естественного языка для анализа юридических документов. 
-                Наша система обучена на тысячах договоров и правовых актов Узбекистана.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-700">Обработка естественного языка (NLP)</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-700">Машинное обучение и глубокие нейронные сети</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-700">Анализ правовых рисков в реальном времени</span>
-                </div>
-                <div className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-700">Интеграция с базами данных законодательства</span>
-                </div>
-              </div>
+        <div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            {sectionTitles.tech[lang]}
+          </h2>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            {{
+          ru: "Мы используем самые современные технологии машинного обучения и обработки естественного языка для анализа юридических документов. Наша система обучена на тысячах договоров и правовых актов Узбекистана.",
+          en: "We use the most advanced machine learning and natural language processing technologies to analyze legal documents. Our system is trained on thousands of contracts and legal acts of Uzbekistan.",
+          uz: "Biz yuridik hujjatlarni tahlil qilish uchun eng zamonaviy mashinaviy o‘rganish va tabiiy tilni qayta ishlash texnologiyalaridan foydalanamiz. Tizimimiz minglab shartnomalar va O‘zbekiston huquqiy hujjatlari asosida o‘qitilgan."
+            }[lang]}
+          </p>
+          <div className="space-y-4">
+            <div className="flex items-center">
+          <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+          <span className="text-gray-700">
+            {{
+              ru: "Обработка естественного языка (NLP)",
+              en: "Natural Language Processing (NLP)",
+              uz: "Tabiiy tilni qayta ishlash (NLP)"
+            }[lang]}
+          </span>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
-              <div className="text-center">
-                <Scale className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {{
-                    ru: 'ИИ-движок SafeSign',
-                    en: 'SafeSign AI Engine',
-                    uz: 'SafeSign sunʼiy intellekt dvigateli'
-                  }[lang]}
+            <div className="flex items-center">
+          <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+          <span className="text-gray-700">
+            {{
+              ru: "Машинное обучение и глубокие нейронные сети",
+              en: "Machine learning and deep neural networks",
+              uz: "Mashinaviy o‘rganish va chuqur neyron tarmoqlar"
+            }[lang]}
+          </span>
+            </div>
+            <div className="flex items-center">
+          <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+          <span className="text-gray-700">
+            {{
+              ru: "Анализ правовых рисков в реальном времени",
+              en: "Real-time legal risk analysis",
+              uz: "Huquqiy xatarlarni real vaqt rejimida tahlil qilish"
+            }[lang]}
+          </span>
+            </div>
+            <div className="flex items-center">
+          <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+          <span className="text-gray-700">
+            {{
+              ru: "Интеграция с базами данных законодательства",
+              en: "Integration with legislation databases",
+              uz: "Qonunchilik maʼlumotlar bazalari bilan integratsiya"
+            }[lang]}
+          </span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+          <div className="text-center">
+            <Scale className="h-16 w-16 text-blue-600 mx-auto mb-4" />
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+          {{
+            ru: 'ИИ-движок SafeSign',
+            en: 'SafeSign AI Engine',
+            uz: 'SafeSign sunʼiy intellekt dvigateli'
+          }[lang]}
                 </h3>
                 <p className="text-gray-600 mb-6">
                   {{
@@ -521,28 +547,31 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-6 w-6 text-blue-600" />
+                <MapPin className="h-6 w-6 text-bl</div>ue-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Офис</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{{ru:'Офис',en:'Office',uz:'Ofis'}[lang]}</h3>
               <p className="text-gray-600">
-                г. Ташкент, ул. Амира Темура, 108<br />
-                Бизнес-центр "Poytaxt", 15 этаж
+                {{
+              ru: "г. Ташкент, ул. Шахрисабз, 7",
+              en: "Tashkent, Shahrisabz str., 7",
+              uz: "Toshkent, Shahrisabz ko'chasi, 7"
+            }[lang]}
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
               <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Phone className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Телефон</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{{ru:'Телефон',en:'Phone',uz:'Telefon'}[lang]}</h3>
               <p className="text-gray-600">
-                +998 94 650 74 78
+                +998 33 450 74 78
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-6 w-6 text-purple-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{{ru:'Электронная почта',en:'Email',uz:'Elektron pochta'}[lang]}</h3>
               <p className="text-gray-600">
                 info@safesign.uz<br />
                 support@safesign.uz
@@ -551,30 +580,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* CTA */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700"></div>
-        <div className="relative max-w-7xl mx-auto text-center py-16 px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              {sectionTitles.cta[lang].replace('LegalAI', 'SafeSign')}
-            </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              {sectionTitles.ctaDesc[lang].replace(/LegalAI/g, 'SafeSign')}
-            </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-xl text-blue-700 bg-white hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl">
-              {sectionTitles.try[lang]}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-            <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-lg font-medium rounded-xl text-white hover:bg-white hover:text-blue-700 transition-all duration-200">
-              {sectionTitles.contactBtn[lang]}
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
-
-export default About;

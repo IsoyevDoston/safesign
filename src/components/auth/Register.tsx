@@ -68,13 +68,29 @@ const Register = () => {
     switch (strength) {
       case 0:
       case 1:
-        return { text: 'Слабый', color: 'text-red-500' };
+        return { text: {
+        ru: "Слабый",
+        en: "Weak",
+        uz: "Kuchsiz"
+      }, color: 'text-red-500' };
       case 2:
-        return { text: 'Средний', color: 'text-yellow-500' };
+        return { text: {
+          ru: "Средний",
+          en: "Medium",
+          uz: "O'rtacha"
+        }, color: 'text-yellow-500' };
       case 3:
-        return { text: 'Хороший', color: 'text-blue-500' };
+        return { text: {
+          ru: "Хороший",
+          en: "Good",
+          uz: "Yaxshi"
+        }, color: 'text-blue-500' };
       case 4:
-        return { text: 'Отличный', color: 'text-green-500' };
+        return { text: {
+          ru: "Отличный",
+          en: "Excellent",
+          uz: "A'lo"
+        }, color: 'text-green-500' };
       default:
         return { text: '', color: '' };
     }
@@ -197,7 +213,9 @@ const Register = () => {
                       />
                     </div>
                     <span className={`text-xs font-medium ${strengthInfo.color}`}>
-                      {strengthInfo.text}
+                      {typeof strengthInfo.text === 'string'
+                        ? strengthInfo.text
+                        : strengthInfo.text[t('lang') as keyof typeof strengthInfo.text] || ''}
                     </span>
                   </div>
                 </div>

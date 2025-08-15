@@ -83,9 +83,9 @@ const translations = {
     en: 'AI Assistant for Legal Tasks'
   },
   'home.hero.subtitle': {
-    uz: 'Shartnomalarni tahlil qiling, yuridik maslahatlar oling va sun\'iy intellekt yordamida qonunlarni o\'rganing. O\'zbekiston va Markaziy Osiyo biznesiga maxsus yaratilgan.',
-    ru: 'Анализируйте договоры, получайте юридические консультации и изучайте законы с помощью искусственного интеллекта. Создано специально для бизнеса в Узбекистане и Центральной Азии.',
-    en: 'Analyze contracts, get legal advice, and study laws with artificial intelligence. Created specifically for business in Uzbekistan and Central Asia.'
+    uz: 'Shartnomalarni tahlil qiling, yuridik maslahatlar oling va sun\'iy intellekt yordamida qonunlarni o\'rganing. O\'zbekiston bizneslariga maxsus yaratilgan.',
+    ru: 'Анализируйте договоры, получайте юридические консультации и изучайте законы с помощью искусственного интеллекта. Создано специально для бизнеса в Узбекистане.',
+    en: 'Analyze contracts, get legal advice, and study laws with artificial intelligence. Created specifically for business in Uzbekistan.'
   },
   'home.hero.cta_start': {
     uz: 'Bepul boshlash',
@@ -133,9 +133,9 @@ const translations = {
     en: 'Law Database'
   },
   'home.feature.law_database.description': {
-    uz: 'AI yordamida O\'zbekiston va Markaziy Osiyo qonunlarini qidirish va tushuntirish',
-    ru: 'Поиск и разъяснение законов Узбекистана и Центральной Азии с помощью ИИ',
-    en: 'Search and explanation of laws of Uzbekistan and Central Asia with AI'
+    uz: 'AI yordamida O\'zbekiston qonunlarini qidirish va tushuntirish',
+    ru: 'Поиск и разъяснение законов Узбекистана с помощью ИИ',
+    en: 'Search and explanation of laws of Uzbekistan with AI'
   },
 
   // Benefits
@@ -170,9 +170,9 @@ const translations = {
     en: 'Local Expertise'
   },
   'home.benefit.expertise.description': {
-    uz: 'O\'zbekiston va Markaziy Osiyo mamlakatlari qonunchiligiga ixtisoslashuv',
-    ru: 'Специализация на законодательстве Узбекистана и стран Центральной Азии',
-    en: 'Specialization in the legislation of Uzbekistan and Central Asian countries'
+    uz: 'O\'zbekiston qonunchiligiga ixtisoslashuv',
+    ru: 'Специализация на законодательстве Узбекистана',
+    en: 'Specialization in the legislation of Uzbekistan'
   },
 
   // CTA
@@ -182,9 +182,9 @@ const translations = {
     en: 'Ready to Start?'
   },
   'home.cta.subtitle': {
-    uz: 'LegalAI-ni bugun bepul sinab ko\'ring. 3 ta hujjat tahlili majburiyatsiz.',
-    ru: 'Попробуйте LegalAI бесплатно уже сегодня. 3 анализа документов без обязательств.',
-    en: 'Try LegalAI for free today. 3 document analyses without obligations.'
+    uz: 'SafeSign-ni bugun bepul sinab ko\'ring. 3 ta hujjat tahlili majburiyatsiz.',
+    ru: 'Попробуйте SafeSign бесплатно уже сегодня. 3 анализа документов без обязательств.',
+    en: 'Try SafeSign for free today. 3 document analyses without obligations.'
   },
   'home.cta.button': {
     uz: 'Bepul ro\'yxatdan o\'tish',
@@ -199,9 +199,9 @@ const translations = {
     en: 'Welcome'
   },
   'auth.login_subtitle': {
-    uz: 'LegalAI hisobingizga kiring',
-    ru: 'Войдите в свой аккаунт LegalAI',
-    en: 'Sign in to your LegalAI account'
+    uz: 'SafeSign hisobingizga kiring',
+    ru: 'Войдите в свой аккаунт SafeSign',
+    en: 'Sign in to your SafeSign account'
   },
   'auth.register_title': {
     uz: 'Hisob yaratish',
@@ -209,9 +209,9 @@ const translations = {
     en: 'Create Account'
   },
   'auth.register_subtitle': {
-    uz: 'LegalAI-ga qo\'shiling va 3 ta bepul tahlil oling',
-    ru: 'Присоединяйтесь к LegalAI и получите 3 бесплатных анализа',
-    en: 'Join LegalAI and get 3 free analyses'
+    uz: 'SafeSign-ga qo\'shiling va 3 ta bepul tahlil oling',
+    ru: 'Присоединяйтесь к SafeSign и получите 3 бесплатных анализа',
+    en: 'Join SafeSign and get 3 free analyses'
   },
   'auth.email': {
     uz: 'Email manzil',
@@ -444,9 +444,9 @@ const translations = {
 
   // Blog
   'blog.title': {
-    uz: 'LegalAI huquqiy blogi',
-    ru: 'Правовой блог LegalAI',
-    en: 'LegalAI Legal Blog'
+    uz: 'SafeSign huquqiy blogi',
+    ru: 'Правовой блог SafeSign',
+    en: 'SafeSign Legal Blog'
   },
   'blog.subtitle': {
     uz: 'Huquq, biznes va texnologiyalar bo\'yicha ekspert maqolalari. O\'zbekiston va Markaziy Osiyo qonunchiligi haqida dolzarb ma\'lumotlar.',
@@ -476,9 +476,9 @@ const translations = {
 
   // About
   'about.title': {
-    uz: 'LegalAI platformasi haqida',
-    ru: 'О платформе LegalAI',
-    en: 'About LegalAI Platform'
+    uz: 'SafeSign platformasi haqida',
+    ru: 'О платформе SafeSign',
+    en: 'About SafeSign Platform'
   },
   'about.subtitle': {
     uz: 'Biz yuridik xizmatlarning kelajagini yaratmoqdamiz, ilg\'or sun\'iy intellekt texnologiyalarini O\'zbekiston huquqidagi chuqur ekspertiza bilan birlashtiramiz',

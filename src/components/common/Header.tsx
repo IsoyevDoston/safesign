@@ -38,7 +38,7 @@ const Header = () => {
                 <Scale className="h-6 w-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">LegalAI</span>
+                <span className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">SafeSign</span>
                 <span className="text-xs text-gray-500 font-medium">Uzbekistan</span>
               </div>
             </Link>

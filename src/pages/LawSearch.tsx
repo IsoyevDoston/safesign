@@ -10,7 +10,8 @@ import {
   FileText,
   Scale,
   ChevronDown,
-  Star
+  Star,
+  X
 } from 'lucide-react';
 
 interface Law {

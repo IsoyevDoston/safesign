@@ -7,9 +7,9 @@ const LanguageSelector = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const languages = [
-    { code: 'uz' as Language, name: 'O\'zbekcha', flag: '🇺🇿' },
-    { code: 'ru' as Language, name: 'Русский', flag: '🇷🇺' },
-    { code: 'en' as Language, name: 'English', flag: '🇺🇸' }
+    { code: 'uz' as Language, name: 'UZ', flag: '🇺🇿' },
+    { code: 'ru' as Language, name: 'RU', flag: '🇷🇺' },
+    { code: 'en' as Language, name: 'EN', flag: '🇺🇸' }
   ];
 
   const currentLanguage = languages.find(lang => lang.code === language);

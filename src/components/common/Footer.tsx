@@ -14,7 +14,7 @@ const Footer = () => {
                 <Scale className="h-6 w-6 text-white" />
               </div>
               <div>
-                <span className="text-xl font-bold">LegalAI</span>
+                <span className="text-xl font-bold">SafeSign</span>
                 <p className="text-sm text-gray-400">Uzbekistan</p>
               </div>
             </div>
@@ -96,16 +96,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-gray-400 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  г. Ташкент, ул. Амира Темура, 108
+                  г. Ташкент, ул. Шахрисабз, 7
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+998 71 123 45 67</span>
+                <span className="text-gray-300 text-sm">+998 33 450 74 78</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-gray-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">info@legalai.uz</span>
+                <span className="text-gray-300 text-sm">info@safesign.uz</span>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 LegalAI Uzbekistan. Все права защищены.
+              © 2025 SafeSign Uzbekistan. Все права защищены.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
